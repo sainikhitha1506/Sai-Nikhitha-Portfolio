@@ -17,7 +17,7 @@ const Education = () => {
             </div>
           </div>
           <h3 className="text-xl font-semibold text-white">Master’s in Computer Science</h3>
-          <p className="text-gray-400 text-sm mb-2">2023 – 2025 | USA</p>
+          <p className="text-gray-400 text-sm mb-2">2022 – 2023 | USA</p>
           <p className="text-gray-300">
             Specialized in full-stack development, cloud computing, and AI projects.
           </p>
@@ -31,7 +31,7 @@ const Education = () => {
             </div>
           </div>
           <h3 className="text-xl font-semibold text-white">Bachelor’s in Computer Science</h3>
-          <p className="text-gray-400 text-sm mb-2">2016 – 2020 | India</p>
+          <p className="text-gray-400 text-sm mb-2">2017 – 2021 | India</p>
           <p className="text-gray-300">
             Focused on software engineering, data structures, and database design.
           </p>

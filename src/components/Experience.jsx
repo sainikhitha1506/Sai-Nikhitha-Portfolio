@@ -5,7 +5,7 @@ const experienceData = [
   {
     role: "Software Engineer",
     company: "First Citizens Bank",
-    duration: "June 2022 – Present",
+    duration: "Dec 2023 – Present",
     description:
       "Developed and maintained banking applications with a focus on performance, scalability, and security.",
     responsibilities: [
