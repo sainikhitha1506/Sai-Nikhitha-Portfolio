@@ -5,11 +5,15 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section id="hero" className="hero-bg text-white relative">
-      {/* Overlay */}
-      <div className="hero-overlay"></div>
+    <section
+      id="hero"
+      className="relative text-white h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-blue-500 to-teal-500 animate-gradient-x"></div>
+      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay */}
 
-      {/* Floating Particles */}
+      {/* Floating Particles (Optional for premium look) */}
       <div className="particles">
         <div className="particle"></div>
         <div className="particle"></div>
@@ -57,9 +61,9 @@ const Hero = () => {
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-6 text-2xl">
+        <div className="flex justify-center gap-6 text-2xl mb-10">
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/YOUR-LINKEDIN"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition-colors duration-300"
@@ -67,7 +71,7 @@ const Hero = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/sainikhitha1506"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400 transition-colors duration-300"

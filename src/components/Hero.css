@@ -1,97 +1,117 @@
+/* Background & Overlay */
 .hero-bg {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   overflow: hidden;
-  background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1e293b);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
 }
 
-/* Overlay for soft dark effect */
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-/* Gradient background animation */
-@keyframes gradientBG {
-  0% {
+/* Animated Gradient Background */
+@keyframes gradient-x {
+  0%, 100% {
     background-position: 0% 50%;
   }
   50% {
     background-position: 100% 50%;
   }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
-/* Particle animation */
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 8s ease infinite;
+}
+
+/* Floating Particles */
 .particles {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 .particle {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
-  animation: float 10s linear infinite;
+  animation: float 12s linear infinite;
 }
 
 .particle:nth-child(1) {
   top: 20%;
-  left: 10%;
-  animation-duration: 8s;
-}
-.particle:nth-child(2) {
-  top: 40%;
-  left: 70%;
-  animation-duration: 12s;
-}
-.particle:nth-child(3) {
-  top: 60%;
-  left: 30%;
-  animation-duration: 15s;
-}
-.particle:nth-child(4) {
-  top: 80%;
-  left: 50%;
+  left: 15%;
   animation-duration: 10s;
+  animation-delay: 0s;
 }
+
+.particle:nth-child(2) {
+  top: 50%;
+  left: 60%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.particle:nth-child(3) {
+  top: 70%;
+  left: 25%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+.particle:nth-child(4) {
+  top: 40%;
+  left: 80%;
+  animation-duration: 18s;
+  animation-delay: 6s;
+}
+
 .particle:nth-child(5) {
   top: 10%;
-  left: 90%;
-  animation-duration: 14s;
+  left: 50%;
+  animation-duration: 20s;
+  animation-delay: 8s;
 }
 
 @keyframes float {
   0% {
     transform: translateY(0) scale(1);
-    opacity: 0.6;
+    opacity: 1;
   }
   50% {
-    transform: translateY(-30px) scale(1.2);
-    opacity: 1;
+    transform: translateY(-20px) scale(1.1);
+    opacity: 0.7;
   }
   100% {
     transform: translateY(0) scale(1);
-    opacity: 0.6;
+    opacity: 1;
   }
+}
+
+/* Text Styling */
+.hero-bg h1,
+.hero-bg h2 {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons Hover Effect */
+.hero-bg a {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-bg a:hover {
+  transform: scale(1.05);
 }
