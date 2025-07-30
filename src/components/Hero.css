@@ -1,0 +1,97 @@
+.hero-bg {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1e293b);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Overlay for soft dark effect */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Gradient background animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Particle animation */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+}
+
+.particle:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation-duration: 8s;
+}
+.particle:nth-child(2) {
+  top: 40%;
+  left: 70%;
+  animation-duration: 12s;
+}
+.particle:nth-child(3) {
+  top: 60%;
+  left: 30%;
+  animation-duration: 15s;
+}
+.particle:nth-child(4) {
+  top: 80%;
+  left: 50%;
+  animation-duration: 10s;
+}
+.particle:nth-child(5) {
+  top: 10%;
+  left: 90%;
+  animation-duration: 14s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+}

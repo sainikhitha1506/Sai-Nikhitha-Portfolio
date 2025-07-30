@@ -1,0 +1,85 @@
+.experience-section {
+  background-color: #0a0f1c;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #7c3aed;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.experience-card {
+  background: #1a1f2e;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #8b5cf6;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #f3f4f6;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: #a78bfa;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin: 10px 0 15px;
+  color: #d1d5db;
+}
+
+.sub-title {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #c084fc;
+  font-weight: bold;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.tech-tag {
+  background: #7c3aed;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: #9d4edd;
+}
