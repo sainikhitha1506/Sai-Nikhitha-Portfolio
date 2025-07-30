@@ -11,9 +11,9 @@ const experienceData = [
     responsibilities: [
       "Implemented CI/CD pipelines for automated deployments.",
       "Optimized APIs for high-traffic financial transactions.",
-      "Collaborated with cross-functional teams to ensure compliance and data integrity."
+      "Collaborated with cross-functional teams to ensure compliance and data integrity.",
     ],
-    technologies: ["Java", "Spring Boot", "React", "AWS", "Docker", "Kubernetes"]
+    technologies: ["Java", "Spring Boot", "React", "AWS", "Docker", "Kubernetes"],
   },
   {
     role: "Software Engineer",
@@ -24,15 +24,15 @@ const experienceData = [
     responsibilities: [
       "Developed RESTful APIs and integrated third-party services.",
       "Automated onboarding processes with PowerShell & C# scripts.",
-      "Improved performance by 30% through database query optimization."
+      "Improved performance by 30% through database query optimization.",
     ],
-    technologies: [".NET Core", "C#", "SQL Server", "Azure", "Jenkins", "Terraform"]
-  }
+    technologies: [".NET Core", "C#", "SQL Server", "Azure", "Jenkins", "Terraform"],
+  },
 ];
 
 const Experience = () => {
   return (
-    <section className="experience-section">
+    <section id="experience" className="experience-section">
       <h2 className="section-title">Experience</h2>
       <div className="timeline">
         {experienceData.map((exp, index) => (

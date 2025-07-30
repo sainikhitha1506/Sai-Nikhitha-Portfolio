@@ -10,13 +10,13 @@ const Education = () => {
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         
         {/* Master's */}
-        <div className="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+        <div className="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
           <div className="flex justify-center mb-4">
             <div className="bg-gradient-to-r from-blue-400 to-cyan-400 p-4 rounded-full text-white text-3xl">
               <FaGraduationCap />
             </div>
           </div>
-          <h3 className="text-xl font-semibold text-white">Master’s in Computer Science</h3>
+          <h3 className="text-xl font-semibold text-white">Master’s in Management Information Systems</h3>
           <p className="text-gray-400 text-sm mb-2">2022 – 2023 | USA</p>
           <p className="text-gray-300">
             Specialized in full-stack development, cloud computing, and AI projects.
@@ -24,7 +24,7 @@ const Education = () => {
         </div>
         
         {/* Bachelor's */}
-        <div className="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+        <div className="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
           <div className="flex justify-center mb-4">
             <div className="bg-gradient-to-r from-blue-400 to-cyan-400 p-4 rounded-full text-white text-3xl">
               <FaSchool />
